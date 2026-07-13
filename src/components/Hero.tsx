@@ -1,7 +1,7 @@
 import { buildApolloPayload } from "../lib/thirdPartyApi";
 
-export function ice_break_with(linkedin_username: string) {
-  const payload = buildApolloPayload(linkedin_username);
+export function ice_break_with(linkedin_url: string) {
+  const payload = buildApolloPayload(linkedin_url);
   return fetch("https://api.apollo.io/v1/icebreaker", {
     method: "POST",
     body: JSON.stringify(payload),
