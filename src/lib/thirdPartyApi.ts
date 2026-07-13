@@ -1,3 +1,3 @@
-export function buildApolloPayload(linkedin_username: string) {
-  return { linkedin_username };
+export function buildApolloPayload(linkedin_url: string) {
+  return { linkedin_url };
 }
